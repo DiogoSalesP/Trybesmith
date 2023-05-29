@@ -14,4 +14,9 @@ export default class ProductService {
     const result = await this.productModel.create(product);
     return { status: statusCodes.CREATED, result };
   }
+
+  async getAll() {
+    const products = await this.productModel.getAll();
+    return { status: statusCodes.OK, products };
+  }
 }
