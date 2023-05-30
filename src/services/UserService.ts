@@ -1,6 +1,6 @@
 import { IUser } from '../interfaces/IUser';
 import connection from '../models/connection';
-import UserModel from '../models/userModel';
+import UserModel from '../models/UserModel';
 import TokenService from '../utils/TokenService';
 import statusCodes from '../utils/statuCodes';
 
