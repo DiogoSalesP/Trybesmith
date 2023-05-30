@@ -5,8 +5,8 @@ import { IUser } from '../interfaces/IUser';
 export default class UserController {
   userService: UserService;
 
-  constructor() {
-    this.userService = new UserService();
+  constructor(userService = new UserService()) {
+    this.userService = userService;
     this.create = this.create.bind(this);
   }
 
